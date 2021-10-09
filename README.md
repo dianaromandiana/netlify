@@ -1,8 +1,9 @@
 #netlify
-
-pull request =  https://github.com/dianaromandiana/netlify/pull/1#issue-1021701660
-pull request =  PullRequest1_Sprint1
-pull request =  https://github.com/dianaromandiana/netlify/pull/PullRequest2_Sprint1
+pull request: Sprint 1
+[pull request](https://github.com/dianaromandiana/netlify/pull/1#issue-1021701660)
+[pull request] PullRequest1_Sprint1
+[pull request](https://github.com/dianaromandiana/netlify/pull/PullRequest2_Sprint1)
+[pull request](https://github.com/dianaromandiana/netlify/pull/4#issue-754522441)
 
 #Готов ли проект к использованию?
 нет. не связи между формами.
