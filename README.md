@@ -1,18 +1,26 @@
 #netlify
-[pull request](https://github.com/dianaromandiana/netlify/pull/4#issue-754522441)
+
 [Sprint 1](https://github.com/dianaromandiana/netlify/pull/4#issue-754522441)
 
 #Готов ли проект к использованию?
-нет. не связи между формами.
+нет. Не настроенны связи(переходы) между формами.
 
 основное приложение находится в public.
 в папке app - основной код приложения.
-в папке assets - картинки и стили (хотелось бы в будущем).
+auth - всё что связано с авторизацией
+error - ошибки
+main - сам чат, и профиль
+
+в папке assets - картинки и стили (хотелось бы в будущем перенести их сюда).
 в папке routes - роутинги (не сделала).
 в папке views - шаблонизаторы.
 
-запуск порторитов форм происходит из терминала по команде parcel index.html
+ссылка на netlify
+https://goofy-wiles-325126.netlify.app/
 
+запуск самого приложения из терминала командой node index.js
+
+запуск порторитов форм происходит из терминала по команде parcel index.html
 как пример
 cd 'path где лежит проект'\netlifySDF\public\app\auth\login
 >parcel login.html
@@ -31,7 +39,3 @@ cd 'path где лежит проект'\netlifySDF\public\app\main\profile
 сам чат
 cd 'path где лежит проект'\netlifySDF\public\app\main\dashboard
 >parcel dashboardChat.html
-
-//[pull request](https://github.com/dianaromandiana/netlify/pull/1#issue-1021701660)
-//[pull request] PullRequest1_Sprint1
-//[pull request](https://github.com/dianaromandiana/netlify/pull/PullRequest2_Sprint1)
