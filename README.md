@@ -1,9 +1,6 @@
 #netlify
-pull request: Sprint 1
-[pull request](https://github.com/dianaromandiana/netlify/pull/1#issue-1021701660)
-[pull request] PullRequest1_Sprint1
-[pull request](https://github.com/dianaromandiana/netlify/pull/PullRequest2_Sprint1)
 [pull request](https://github.com/dianaromandiana/netlify/pull/4#issue-754522441)
+[Sprint 1](https://github.com/dianaromandiana/netlify/pull/4#issue-754522441)
 
 #Готов ли проект к использованию?
 нет. не связи между формами.
@@ -34,3 +31,7 @@ cd 'path где лежит проект'\netlifySDF\public\app\main\profile
 сам чат
 cd 'path где лежит проект'\netlifySDF\public\app\main\dashboard
 >parcel dashboardChat.html
+
+//[pull request](https://github.com/dianaromandiana/netlify/pull/1#issue-1021701660)
+//[pull request] PullRequest1_Sprint1
+//[pull request](https://github.com/dianaromandiana/netlify/pull/PullRequest2_Sprint1)
