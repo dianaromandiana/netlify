@@ -1,8 +1,8 @@
 #netlify
 
-[Sprint 1](https://github.com/dianaromandiana/netlify/pull/10#issue-754576639)
+[Sprint 1](https://github.com/dianaromandiana/netlify/pull/11)
 
-[Pull request](https://github.com/dianaromandiana/netlify/pull/10#issue-754576639)
+[Pull request](https://github.com/dianaromandiana/netlify/pull/11)
 
 #Готов ли проект к использованию?
 нет. Не настроенны связи(переходы) между формами.
