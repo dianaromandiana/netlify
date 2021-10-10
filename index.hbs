@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
+    <script src="public/app/index.js"></script>
+</head>
+
+<body>
+<div class="chat-page">
+    <div class="form">
+        <div class="chat">
+            <div class="chat-header">
+                <h3>Chat Messages</h3>
+            </div>
+        </div>
+        <form class="chat-form">
+            <div class="message_wrapper" id="message_container">
+
+                <script id="message_list" type="text/x-handlerbars-template">
+                    {{#each message_list}}
+                    <div class="container">
+                        <p>{{message}}</p>
+                        <span class="time-right">{{author}}</span>
+                        <span class="time-right">{{time}}</span>
+                    {{/each}}
+                    </div>
+                </script>
+
+            </div>
+
+            
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
