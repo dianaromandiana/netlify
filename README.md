@@ -3,6 +3,10 @@
 
 [Pull request](https://github.com/dianaromandiana/netlify/pull/14)
 
+https://github.com/dianaromandiana/netlify/pull/14#issue-1021950143
+
+https://github.com/dianaromandiana/netlify/pull/14
+
 *Готов ли проект к использованию?
 нет. Не настроенны связи(переходы) между формами.
 
