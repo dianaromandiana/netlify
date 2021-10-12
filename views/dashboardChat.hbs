@@ -1,0 +1,110 @@
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/styleChat.css">
+    <title>Chat</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
+    <script src="js/dashboardChat.js"></script>
+</head>
+
+<body>
+<div class="chat-page">
+    <div class="form" style="width: 100%; height: 100%;">
+        <div class="chat">
+            <div class="chat-header">
+                <h3> </h3>
+            </div>
+        </div>
+
+        <!--ЛЕВЫЙ БЛОК -->
+        <form class="chatlist-form column" style="width: 38%; height: 100%; " action="">   <!--height: 100%; или тут как 740px-->
+
+            <!-- Блок профиля style="height: 10%;"-->
+            <div class="chat_profile">
+
+                <button onclick="cancel()" class="profileButton" formaction="/">Login Out</button>
+                <div class="row" style="width: 100%;">
+                    <p class="mysidelink" style="align:right"><a href="/profile" onclick="openProfile()">Profile</a></p>
+                </div>
+
+                <div class="row" style="width: 100%; ">
+                    <input onblur="findChat()" type="text" style="width: 75%;height: 25px; margin-left: 5px;" placeholder="Find"/>
+                    <button onclick="addChat()" style="width: 8%;" class="chat_button_darker">+</button>
+                    <button onclick="delChat()" style="width: 8%;" class="chat_button_darker">-</button>
+                </div>
+            </div>
+
+            <!-- Блок списка чатов -->
+             <div class="chat_wrapper" onclick="clickOnChat()">
+                                  {{#each chat_list}}
+                                                      <div class="chat-item">
+                                                          <p>{{this.lastMessageByChat}}</p>
+                                                          <span class="time-right">{{this.author}}</span>
+                                                          <span class="time-right">{{this.time}}</span>
+                                                        </div>
+                                  {{/each}}
+             </div>
+
+
+            <!-- добавление и удаление пользователей из чата;-->
+            <script>
+            function clickOnChat(){
+            //подгружать чат в правый блок
+            }
+            function addChat(){
+            //создание чата;
+            }
+            function delChat(){
+            //удаление чата;
+            }
+            function findChat(){
+            //поиск по всем чатам;
+            }
+
+            function cancel(){
+             window.location.href =  window.location.localhost +'/login';
+            }
+            function openProfile(){
+             //открыть профиль
+             window.location.href =  window.location.localhost +'/profile';
+            }
+            </script>
+
+        </form>
+
+        <!--ПРАВЫЙ БЛОК-->
+        <form class="chat-form column"  style=" width: 60%;  height: 100%;" action="">
+
+            <!-- Блок мессенджра -->
+            <div class="message_wrapper" style=" width: 100%; height: 90%;" id="message_container">
+                      {{#each message_list}}
+                                          <div class="container">
+                                              <p>{{this.message}}</p>
+                                              <span class="time-right">{{this.author}}</span>
+                                              <span class="time-right">{{this.time}}</span>
+                                            </div>
+                      {{/each}}
+            </div>
+
+            <!-- Блок ввода/отправки сообщения -->
+            <div class="text_wrapper" style=" width: 100%; height: 10%;" id="text_container">
+                <input style=" height: 25px; width: 90%; margin-left: 5px;" type="text" id="message"/>
+                <button onclick="send()" style=" width: 5%;" class="chat_button_darker">></button>
+            </div>
+
+            <script>
+
+            function send(){
+            var textMessage = document.getElementById('message').value
+            document.getElementById('textMessage').innerHTML = textMessage;
+            }
+
+            </script>
+
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>
