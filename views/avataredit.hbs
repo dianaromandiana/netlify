@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/profileStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Edit avatar edit-page</title>
+</head>
+<body>
+<div class="avataredit-page">
+    <div class="form" >
+            <div class="avataredit">
+
+            <div class="avataredit-page-header" id="profile-container">
+                <img src="" id="avatar" class="avatar-edit" />
+            </div>
+
+
+            <form class="avataredit-form">
+
+            <input id="avatarUpload" type="file"  multiple="true"  accept="image/png,image/jpeg" capture>
+
+                <button onclick="save()">save</button>
+
+                <div class="row">
+                    <p class="mysidelink" style="align:right"><a href="/profile" onclick="cancel()">Cancel</a></p>
+                </div>
+
+                <script>
+            function save(){
+            }
+            function cancel(){
+             window.location.href =  window.location.origin +'/profile';
+            }
+
+            $("#avatar").click(function(e) {
+                $("#avatarUpload").click();
+            });
+
+            function fasterPreview( uploader ) {
+                if ( uploader.files && uploader.files[0] ){
+                      $('#avatar').attr('src',
+                         window.URL.createObjectURL(uploader.files[0]) );
+                }
+            }
+
+            $("#avatarUpload").change(function(){
+                fasterPreview( this );
+            });
+
+            </script>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
