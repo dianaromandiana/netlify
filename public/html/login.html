@@ -1,8 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/styleLogin.css">
+    <link rel="stylesheet" href="../assets/css/styleLogin.css">
     <title>Login</title>
-    <script src="js/login.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 <body>
 <div class="login-page">
@@ -19,9 +19,10 @@
             <p class="label"><label for="password">Password</label></p>
             <input type="password" placeholder="123456" name="password" id="password"/>
 
-            <button onclick="enter" id="loginButton" formaction="/dashboardChat">login</button>
-            <p class="message">Not registered? <a href="/singup" onclick="create" id="createLink">Create an account</a></p>
+            <a href="/dashboardChat.html"></a><button onclick="enter" id="loginButton"  formaction="/dashboardChat.html" >login</button></a>
+            <p class="message">Not registered? <a href="/singup.html" onclick="create" id="createLink">Create an account</a></p>
         </form>
+
     </div>
 </div>
 </body>

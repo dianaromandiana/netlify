@@ -1,10 +1,10 @@
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/styleChat.css">
+    <link rel="stylesheet" href="../assets/css/styleChat.css">
     <title>Chat</title>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
-    <script async src="js/dashboardChat.js"></script>
+    <script src="../js/dashboardChat.js"></script>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
             <!-- Блок профиля style="height: 10%;"-->
             <div class="chat_profile">
 
-                <button onclick="cancel" class="profileButton" formaction="/">Login Out</button>
+                <a href="/login.html"><button onclick="cancel" class="profileButton" formaction="/login.html" >Login Out</button></a>
                 <div class="row" style="width: 100%;">
-                    <p class="mysidelink" style="align:right"><a href="/profile" onclick="openProfile">Profile</a></p>
+                    <p class="mysidelink" style="align:right"><a href="/profile.html" onclick="openProfile">Profile</a></p>
                 </div>
 
                 <div class="row" style="width: 100%; ">
@@ -69,6 +69,7 @@
 
         </form>
 
+        <script src="../js/dashboardChat.js"></script>
 
     </div>
 </div>

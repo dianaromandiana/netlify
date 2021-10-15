@@ -1,20 +1,53 @@
+            let clickOnChat = () => {
+            //подгружать чат в правый блок
+            }
+            let addChat = () => {
+            //создание чата;
+            }
+            let delChat = () => {
+            //удаление чата;
+            }
+            let findChat = () => {
+            //поиск по всем чатам;
+            }
+
+            let cancel = () => {
+             window.location.href =  window.location.localhost +'/login';
+            }
+            let openProfile = () => {
+             //открыть профиль
+             window.location.href =  window.location.localhost +'/profile';
+            }
+
+            let send = () => {
+            let  sendTextMessage = document.getElementById('message').value;
+            let  message_container = document.getElementById('message_container').innerHTML;
+            let  htmlTextMessage = `\n<div class="container"><p>${sendTextMessage}</p>\n</div>\n`
+            /*'\n<div class="container">\n
+            <p>sendTextMessage!</p>\n
+            <span class="time-right">Kate</span>\n
+            <span class="time-right">10:10:01</span>\n
+            </div>\n'*/
+            message_container = message_container.concat(htmlTextMessage);
+            }
+
 
 (function (){
 /*$.ajax({
 url: '/data.json'
 }).done(function(data){
 
-var message_container= document.getElementById('message_container');
-//var json= JSON.parse(data);
-var source = document.getElementById("message_list").innerHTML;
-var template = Handlebars.compile(source);
-var html = template(dataMessage); // template(json);
+let  message_container= document.getElementById('message_container');
+//let  json= JSON.parse(data);
+let  source = document.getElementById("message_list").innerHTML;
+let  template = Handlebars.compile(source);
+let  html = template(dataMessage); // template(json);
 
 message_container.append(html);
 })*/
 })()
 
-var dataMessage={
+const dataMessage={
        message_list:[
          {
            message : "Hello!",
@@ -38,4 +71,3 @@ var dataMessage={
          }*/
        ]
 };
-

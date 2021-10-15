@@ -1,8 +1,7 @@
 const express = require('express');
-var exphbs  = require('express-handlebars');
 const app = express();
 const host = 'localhost'; //'127.0.0.1'
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const path = require('path')
 
@@ -10,7 +9,6 @@ app.set('views', './views');
 app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname,'/public/')));
-
 
 app.get('/', (req, res) => {
          res.render('login.hbs');
@@ -22,13 +20,9 @@ app.get('/singup', (req, res) => {
   res.render('singup.hbs');
 });
 
-/*app.get('/dashboardChat', (req, res) => {
-  res.render('dashboardChat.hbs');
-});*/
 app.get('/dashboardChat', (req, res) => {
 res.render('dashboardChat.hbs', {chat_list: fakeJsonChatsFromDB(), message_list: fakeJsonChatByUserFromDB()});
 });
-
 
 app.get('/edit', (req, res) => {
        res.render('edit.hbs');
@@ -43,7 +37,6 @@ app.get('/profile', (req, res) => {
 app.listen(port, host, function () {
   console.log(` Приложение запущено по http: ${host}:${port}`)
 })
-
 
 fakeJsonChatByUserFromDB = () => {
   return [
