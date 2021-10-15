@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Select page on netlify</title>
+    <title>Chat on netlify</title>
     <script src="public/js/login.js"></script>
     <script src="public/js/singup.js"></script>
-    <!--<script src="netlify.js"></script> Not Used anymore -->
 </head>
+
 <body>
-
-<select name="select" id="select">
-<option value="login.html">login</option>
-<option value="singup.html">sing up</option>
-<option value="edit.html">edit</option>
-<option value="profile.html">profile</option>
-<option value="dashboardChat.html">dashboard</option>
-<option value="avataredit.html">avatar edit</option>
-</select>
-
-<!--<template id="template">
-</template>-->
-
-<button onclick="toPage()">Select page</button>
-
-<script>
-const toPage = (event) => {
-const path = document.querySelector('#select');
-window.location.pathname = `/${path.value}`;
-}
-</script>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<div class="">
+    <div w3-include-html="public/html/login.html" ></div>
+</div>
 </body>
+<script type="text/javascript">
+    w3IncludeHTML();
+</script>
 </html>
-
